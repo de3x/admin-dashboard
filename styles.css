@@ -1,0 +1,241 @@
+/* Josh's Custom CSS reset */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Rules from Google Material Design */
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* My own styles  */
+
+/* temporary */
+* {
+  /* border: 2px solid blue; */
+}
+
+/* temporary padding for better visibility */
+body {
+  padding: 50px;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: blanchedalmond;
+}
+
+.main-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+}
+
+.header {
+  background-color: #ffffff;
+  grid-area: header;
+}
+
+.sidebar {
+  background-color: #1992d4;
+  color: white;
+  grid-area: sidebar;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr 5fr;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.logo-wrapper {
+  display: flex;
+  padding: 8px;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-left: 8px;
+  margin: 0;
+  display: block;
+}
+
+.nav-wrapper {
+  display: grid;
+}
+
+.nav-wrapper ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "."
+    "seven"
+    "eight"
+    "nine";
+  list-style: none;
+  padding-left: 16px;
+}
+
+.nav-wrapper ul li {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 4px 0;
+}
+
+.nav-wrapper ul li span {
+  display: block;
+  padding-right: 12px;
+}
+
+.sample {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  background-color: #e2e8f0;
+  grid-area: content;
+}
+
+/* Very tedious way of implementing grid-template area for nav li's */
+.nav-1 {
+  grid-area: one;
+}
+.nav-2 {
+  grid-area: two;
+}
+.nav-3 {
+  grid-area: three;
+}
+.nav-4 {
+  grid-area: four;
+}
+.nav-5 {
+  grid-area: five;
+}
+.nav-6 {
+  grid-area: six;
+}
+.nav-7 {
+  grid-area: seven;
+}
+.nav-8 {
+  grid-area: eight;
+}
+.nav-9 {
+  grid-area: nine;
+}
