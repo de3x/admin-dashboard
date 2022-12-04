@@ -212,10 +212,15 @@ body {
 .action-buttons-wrapper button {
   background-color: #1992d4;
   color: white;
+  border: none;
   border-radius: 16px;
   height: 40px;
   width: 100px;
   font-weight: 700;
+}
+
+body p {
+  color: #636363;
 }
 
 .sidebar {
@@ -244,6 +249,7 @@ body {
   padding-left: 8px;
   margin: 0;
   display: block;
+  color: white;
 }
 
 .nav-wrapper {
@@ -309,9 +315,40 @@ body {
 
 .announcements-header {
   position: absolute;
+  top: 0;
+  left: 2px;
   margin-top: -2rem;
+  justify-self: flex-start;
 }
 
+.announcements {
+  grid-area: announcements;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  gap: 16px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 2px 4px 8px hsl(0deg 0% 0% / 0.25);
+}
+
+.announcement-item {
+  padding-bottom: 12px;
+  border-bottom: 1px solid grey;
+}
+
+.announcement-item:last-of-type {
+  border-bottom: none;
+}
+
+.announcement-item .item-header {
+  font-size: 0.85rem;
+}
+.announcement-item .item-p {
+  font-size: 0.75rem;
+}
 .trending-header {
   position: absolute;
   margin-top: -2rem;
@@ -353,13 +390,6 @@ body {
     "announcements"
     "."
     "trending";
-}
-
-.announcements {
-  grid-area: announcements;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 2px 4px 8px hsl(0deg 0% 0% / 0.25);
 }
 
 .trending {
