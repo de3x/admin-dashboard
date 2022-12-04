@@ -10,10 +10,36 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div class="main-container">
-      <div class="header"></div>
+    <div class="container">
+      <div class="header">
+        <div class="search-wrapper">
+          <span class="material-icons search-icon">search</span>
+          <input type="search" id="searchbar" placeholder="" />
+        </div>
+        <div class="profile-wrapper">
+          <span class="material-icons alarm-icon">alarm</span>
+          <div class="circle-icon">p</div>
+          <div class="username">Paul Fleishman</div>
+        </div>
+        <div class="welcome-wrapper">
+          <div class="big circle-icon">p</div>
+          <div class="welcome-message">
+            Hi there, <br />
+            <span class="big username"> Paul Fleishman (@fleishman) </span>
+          </div>
+        </div>
+        <div class="action-buttons-wrapper">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
       <div class="sidebar">
         <div class="logo-wrapper">
           <span class="material-icons md-36">dashboard</span>
@@ -47,7 +73,20 @@
           </ul>
         </div>
       </div>
-      <div class="content"></div>
+      <div class="content">
+        <div class="projects-wrapper">
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
+        <div class="extras-wrapper">
+          <div class="announcements"></div>
+          <div class="trending"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
