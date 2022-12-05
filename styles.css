@@ -146,7 +146,7 @@ body {
   padding-top: 16px;
   display: grid;
   grid-template-columns: 10fr 1fr;
-  grid-template-rows: 2fr 5fr;
+  grid-template-rows: 5fr 11fr;
   grid-template-areas:
     "search profile"
     "welcome actions";
@@ -182,17 +182,26 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding-right: 16px;
-  padding-top: 8px;
+  /* padding-top: 8px; */
   font-weight: 700;
 }
 
+#avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.image-wrapper img {
+  overflow: hidden;
+}
 .welcome-wrapper {
   grid-area: welcome;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   align-self: flex-end;
-  padding-bottom: 16px;
+  padding: 16px 0px;
+  gap: 16px;
 }
 
 .spacer {
@@ -232,9 +241,11 @@ body p {
   background-color: #1992d4;
   color: white;
   grid-area: sidebar;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 5fr 5fr;
+  grid-template-rows: 1fr 5fr 5fr; */
+  display: flex;
+  flex-direction: column;
   font-size: 0.875rem;
   font-weight: 600;
   padding: 16px;
@@ -243,6 +254,7 @@ body p {
 .logo-wrapper {
   display: flex;
   padding: 8px;
+  padding-bottom: 48px;
   color: white;
   align-items: center;
   justify-content: flex-start;
@@ -255,10 +267,6 @@ body p {
   margin: 0;
   display: block;
   color: white;
-}
-
-.nav-wrapper {
-  display: grid;
 }
 
 .nav-wrapper ul {
@@ -278,6 +286,7 @@ body p {
     "nine";
   list-style: none;
   padding-left: 16px;
+  gap: 12px;
 }
 
 .nav-wrapper ul li {
@@ -308,21 +317,21 @@ body p {
 
 .projects-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: 200px;
   gap: 24px;
 }
 
 .projects-header {
   position: absolute;
-  margin-top: -2rem;
+  margin-top: -2.2rem;
 }
 
 .announcements-header {
   position: absolute;
   top: 0;
   left: 2px;
-  margin-top: -2rem;
+  margin-top: -2.2rem;
   justify-self: flex-start;
 }
 
@@ -373,7 +382,7 @@ body p {
 }
 .trending-header {
   position: absolute;
-  margin-top: -2rem;
+  margin-top: -2.2rem;
   top: 0;
   left: 0;
 }
