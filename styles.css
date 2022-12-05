@@ -107,6 +107,10 @@ h6 {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 200, "opsz" 48;
+}
+
 /* My own styles  */
 
 /* temporary */
@@ -176,6 +180,7 @@ body {
   display: flex;
   gap: 16px;
   justify-content: flex-end;
+  align-items: center;
   padding-right: 16px;
   padding-top: 8px;
   font-weight: 700;
@@ -380,8 +385,7 @@ body p {
 
 .card {
   background-color: white;
-  padding: 16px;
-  padding-bottom: 8px;
+  padding: 24px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 4fr 1fr;
@@ -402,7 +406,7 @@ body p {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   padding: 4px;
 }
 
@@ -446,8 +450,8 @@ body p {
 }
 
 .circle-icon {
-  height: 25px;
-  width: 25px;
+  height: 2rem;
+  width: 2rem;
   background-color: orange;
   border-radius: 50%;
   display: grid;
@@ -455,6 +459,11 @@ body p {
   text-align: center;
 }
 
+.profile-wrapper .circle-icon {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
 .big.circle-icon {
   margin-right: 16px;
 }
