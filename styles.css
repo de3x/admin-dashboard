@@ -297,7 +297,7 @@ body p {
   grid-area: content;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  padding: 48px 24px 24px;
+  padding: 60px 24px 24px;
   gap: 24px;
 }
 
@@ -349,9 +349,33 @@ body p {
 .announcement-item .item-p {
   font-size: 0.75rem;
 }
+
+.trending {
+  grid-area: trending;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 2px 4px 8px hsl(0deg 0% 0% / 0.25);
+  padding: 24px;
+  font-size: 0.8rem;
+}
 .trending-header {
   position: absolute;
   margin-top: -2rem;
+  top: 0;
+  left: 0;
+}
+
+.trending-item-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  min-width: 200px;
 }
 
 .card {
@@ -392,12 +416,6 @@ body p {
     "trending";
 }
 
-.trending {
-  grid-area: trending;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 2px 4px 8px hsl(0deg 0% 0% / 0.25);
-}
 /* Very tedious way of implementing grid-template area for nav li's */
 .nav-1 {
   grid-area: one;
@@ -448,6 +466,13 @@ body p {
 .big {
   height: 4rem;
   width: 4rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.medium {
+  height: 3rem;
+  width: 3rem;
   font-size: 1.1rem;
   font-weight: 700;
 }
