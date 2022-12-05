@@ -361,7 +361,6 @@ body p {
   border-radius: 12px;
   box-shadow: 2px 4px 8px hsl(0deg 0% 0% / 0.25);
   padding: 24px;
-  font-size: 0.8rem;
 }
 .trending-header {
   position: absolute;
@@ -376,6 +375,7 @@ body p {
   align-items: center;
   gap: 16px;
   min-width: 200px;
+  font-size: 0.8rem;
 }
 
 .card {
